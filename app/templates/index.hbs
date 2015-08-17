@@ -1,0 +1,15 @@
+<ul>
+  {{#each model as |item|}}
+    <li>
+      {{#link-to 'item' item._id}}
+        {{item.name}}
+      <p>
+        {{item.description}}
+        <span>${{item.price}}</span>
+      </p>
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+{{outlet}}

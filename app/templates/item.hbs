@@ -1,0 +1,12 @@
+<h2>{{item.Name}}</h2>
+
+<p>
+    {{item.description}}
+    <span>{{item.price}}</span>
+</p>
+
+<div class="actions">
+  <a href="#" {{action 'addToOrder' item}}>
+    Add To Order
+  </a>
+</div>
